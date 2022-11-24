@@ -1,0 +1,33 @@
+
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h2 class="mt-5";">Passport-Face Verification App</h2>
+			<form method="post" action="{{ url_for('tasks') }}">
+			<input type="submit" value="Capture" name="click" style = "
+            color: white;
+            background-color: black;
+            width: 120px;
+            height: 35px;
+            font-size: 16px;
+            "/>
+            <input type="submit" value="Verify" name="verify" style = "
+            color: white;
+            background-color: black;
+            width: 120px;
+            height: 35px;
+            font-size: 16px;
+            "/>
+        	</form>
+            <img src="{{ url_for('video_feed') }}" height="80%">
+			<h3 style="font-family:courier;">Instructions:</h3>
+			<ol style="font-family:courier;">
+			<p>Capture - Take still-shot and save in the 'faces' directory</p>
+            <p>Verify - Check if the face matches the passport image captured</p>
+
+        </div>
+    </div>
+</div>
+</body>
